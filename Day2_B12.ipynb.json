@@ -1,0 +1,372 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Understadning the variables in python"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = 5 # x is holding some value\n",
+    "y = 4 # y is  holding some value\n",
+    "x+y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Commenting"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1, Rule ---> There should be no gap in between variable names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-3-02c66cd729cb>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-3-02c66cd729cb>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    first name = 'Ashok'\u001b[0m\n\u001b[0m             ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "first name = 'Ashok'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "first_name ='Ashok'\n",
+    "firstname='ashok'\n",
+    "# both are valid"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. It  should not start with numbers\n",
+    "1xyz = 1000 --->Invalid declaration\n",
+    "xyz1 = 1000 ---> valid declaration"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. It should not start with any special characters\n",
+    "@abc = 100 --->Invalid dec\n",
+    "abc$ = 100 ---> valid declaration"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Introduction to Data types in python :\n",
+    "\n",
+    "1. String ---> str\n",
+    "2. List ---> list\n",
+    "3. Tuple ---> tuple \n",
+    "4. Dictionary --> dict\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# python is a case sensitive language.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "introduction to string!!"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def: A string is nothing but a  series of characters\n",
+    "    \n",
+    "Features :\n",
+    "\n",
+    "A String is an immutable data type (which can not be changed / modified once its gets assigned )\n",
+    "how to create /define string\n",
+    "3 possible ways by which we can able to cteate a string.\n",
+    "1. '' --> single quotes\n",
+    "2. \"\" --> double quotes\n",
+    "3. \"\"\" \"\"\" --> triple quotes\n",
+    "\n",
+    "# you can use any formats... Single or double ot triple quotes.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ashok Kasam\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = 'Ashok Kasam'\n",
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " joyal Patel\n"
+     ]
+    }
+   ],
+   "source": [
+    "name2  = \" joyal Patel\"\n",
+    "print(name2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A Feyzullah\n"
+     ]
+    }
+   ],
+   "source": [
+    "name3 = \"\"\"A Feyzullah\"\"\"\n",
+    "print(name3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(name3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Introdcution to string methods"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enhancement of the code."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " joyal patel\n",
+      " Joyal Patel\n"
+     ]
+    }
+   ],
+   "source": [
+    "name2  = \" joyal patel\"\n",
+    "print(name2)\n",
+    "print(name2.title())  # title case ---> First letter to caps."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A FEYZULLAH\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name3.upper())   # upper case"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a feyzullah\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name3.lower())   # lower  case"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Ashok Kasam\n"
+     ]
+    }
+   ],
+   "source": [
+    "# using the concept of f strings!!\n",
+    "f_name= 'Ashok'\n",
+    "l_name = 'Kasam'\n",
+    "full_name=f\" {f_name} {l_name}\"\n",
+    "print(full_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Excellent work , Keep up the same Mission Jira\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Enhancement of the code.\n",
+    "f_name = 'Mission'\n",
+    "l_name = 'Jira'\n",
+    "full_name = f\"Excellent work , Keep up the same {f_name} {l_name}\"\n",
+    "print(full_name)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

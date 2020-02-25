@@ -1,0 +1,482 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Introduction to for loops:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['vishal', 'ashok', 'joyal', 'Feyez', 'shawn']\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_emps = ['vishal','ashok','joyal', 'Feyez','shawn']\n",
+    "print(my_emps)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "list"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(my_emps)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Writing  a for  loop\n",
+    "For --> temp var and main varibale -->take care for  indenetation\n",
+    "      Print(temp var)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['vishal', 'ashok', 'joyal', 'Feyez', 'shawn']\n",
+      "['vishal', 'ashok', 'joyal', 'Feyez', 'shawn']\n",
+      "['vishal', 'ashok', 'joyal', 'Feyez', 'shawn']\n",
+      "['vishal', 'ashok', 'joyal', 'Feyez', 'shawn']\n",
+      "['vishal', 'ashok', 'joyal', 'Feyez', 'shawn']\n"
+     ]
+    }
+   ],
+   "source": [
+    "for emp in my_emps:\n",
+    "    print(my_emps)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "vishal\n",
+      "ashok\n",
+      "joyal\n",
+      "Feyez\n",
+      "shawn\n"
+     ]
+    }
+   ],
+   "source": [
+    "for emp in my_emps:\n",
+    "    print(emp)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "emps2 = x,y,z"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "vishal\n",
+      "ashok\n",
+      "joyal\n",
+      "Feyez\n",
+      "shawn\n"
+     ]
+    }
+   ],
+   "source": [
+    "for Hero in my_emps:\n",
+    "    print(Hero)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "vishal\n",
+      "ashok\n",
+      "joyal\n",
+      "Feyez\n",
+      "shawn\n"
+     ]
+    }
+   ],
+   "source": [
+    "for hero in my_emps:\n",
+    "    print(hero)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enhancement of the for loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['vishal', 'ashok', 'joyal', 'Feyez', 'shawn']\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_emps = ['vishal','ashok','joyal', 'Feyez','shawn']\n",
+    "print(my_emps)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Automating the print stament for every  one!"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Vishal,good job in workign with Jira!!\n",
+      "Ashok,good job in workign with Jira!!\n",
+      "Joyal,good job in workign with Jira!!\n",
+      "Feyez,good job in workign with Jira!!\n",
+      "Shawn,good job in workign with Jira!!\n"
+     ]
+    }
+   ],
+   "source": [
+    "for emp in my_emps:\n",
+    "    print(f\"{emp.title()},good job in workign with Jira!!\")   # creating place holder "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Above example calling variable out side of the title. Whatever the output."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Vishal,good job in working with Jira!!\n",
+      "Ashok,good job in working with Jira!!\n",
+      "Joyal,good job in working with Jira!!\n",
+      "Feyez,good job in working with Jira!!\n",
+      "Shawn,good job in working with Jira!!\n"
+     ]
+    }
+   ],
+   "source": [
+    "for emp in my_emps:\n",
+    "    print(f\"{emp.title()},good job in working with Jira!!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good job in working with Jira 8.5!!, Vishal\n",
+      "Good job in working with Jira 8.5!!, Ashok\n",
+      "Good job in working with Jira 8.5!!, Joyal\n",
+      "Good job in working with Jira 8.5!!, Feyez\n",
+      "Good job in working with Jira 8.5!!, Shawn\n"
+     ]
+    }
+   ],
+   "source": [
+    "for emp in my_emps:\n",
+    "    print(f\"Good job in working with Jira 8.5!!, {emp.title()}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Acceptng the user input"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good job in working with Jira 8.5!!, Vishal\n",
+      "Good job in working with Jira 8.5!!, Ashok\n",
+      "Good job in working with Jira 8.5!!, Joyal\n",
+      "Good job in working with Jira 8.5!!, Feyez\n",
+      "Good job in working with Jira 8.5!!, Shawn\n",
+      "\n",
+      " Thanks for  team\n"
+     ]
+    }
+   ],
+   "source": [
+    "for emp in my_emps:\n",
+    "    print(f\"Good job in working with Jira 8.5!!, {emp.title()}\")\n",
+    "print(\"\\n Thanks for  team\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Making a numerical list:\n",
+    "# last value in the range is always exclusive --> 10  ( 10 don't include)\n",
+    "for value in range(1,10):\n",
+    "    print(value)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n",
+      "11\n",
+      "12\n",
+      "13\n",
+      "14\n",
+      "15\n",
+      "16\n",
+      "17\n",
+      "18\n",
+      "19\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Making a numerical list:\n",
+    "# last value in the range is always exclusive --> 20   ( 20  don't include)\n",
+    "for value in range(1,20):\n",
+    "    print(value)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# How to use the range a list of numbers:\n",
+    "numbers = list(range(1,6))\n",
+    "print(numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Range is alos having step count validation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Even Numbers 1 to 50\n",
+    "even_num=list(range(2,51,2))\n",
+    "print(even_num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Odd Numbers 1 to 50\n",
+    "odd_num=list(range(1,51,2))\n",
+    "print(odd_num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Python_Fundamentals\n",
+    "1. Understtaning the varibale\n",
+    "2. rules\n",
+    "3.\n",
+    "4.\n",
+    "6..Introdcution to looping statements\n",
+    "- for loop introduction\n",
+    "- Improving the code with for loop\n",
+    "7. User accepted inut:\n",
+    "    - Featues and specifications\n",
+    "8. Introcution if else conditions\n",
+    "\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
