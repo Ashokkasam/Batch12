@@ -1,0 +1,368 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Introduction to the for loops in dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "looping through all key values pairs"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'username': 'jira', 'first_name': 'Ashok', 'last_name': 'Kasam'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "user_0 = {'username' : 'jira', 'first_name' : 'Ashok', 'last_name' : 'Kasam' }\n",
+    "print(user_0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "key: username\n",
+      "\n",
+      "value: jira\n",
+      "\n",
+      "key: first_name\n",
+      "\n",
+      "value: Ask\n",
+      "\n",
+      "key: last_name\n",
+      "\n",
+      "value: kak\n"
+     ]
+    }
+   ],
+   "source": [
+    "   \n",
+    "#For tempvar in  user_0.items():\n",
+    "  #  print(tempvar)\n",
+    "\n",
+    "    \n",
+    "# Syntax      \n",
+    "# For x,y in user_0.items(): # x, y as been used for temp var\n",
+    "   # print(f\"\\nkey: {x}\") #====> key: ==> pRe degined by using f strings  \n",
+    "   # print(f\"\\nxyz: {y}\")#====> value :  ==> pRe degined by using f strings  \n",
+    "\n",
+    "for key,value in user_0.items():\n",
+    "    print(f\"\\nkey: {key}\")\n",
+    "    print(f\"\\nvalue: {value}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# for  example get only the keys in the for loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Username\n",
+      "First_Name\n",
+      "Last_Name\n"
+     ]
+    }
+   ],
+   "source": [
+    "for  name in user_0.keys():\n",
+    "    print(name.title())\n",
+    "   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# for  example get only the values in the for loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Jira\n",
+      "Ashok\n",
+      "Kasam\n"
+     ]
+    }
+   ],
+   "source": [
+    "for  test in user_0.values():\n",
+    "    print(test.title())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Introduction to while loops"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "defination: as long as or till a certain condition is true it will execute:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "while"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "current_num = 1 # Starting point ==> 1+1, 2+1,...5..6. ( failing stop of the program)\n",
+    "# teration ==> single execution of the program\n",
+    "while  current_num <=5: # validating the condition part\n",
+    "    print(current_num)\n",
+    "    current_num +=1 # ---> long form  current_num  = current_num +1 ===> you are incrementing the value by 1\n",
+    "         "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "current_num = 1 # Starting point ==> 1+1, 2+1,...5..6. ( failing stop of the program)\n",
+    "# teration ==> single execution of the program\n",
+    "while  current_num <=10: # validating the condition part\n",
+    "    print(current_num)\n",
+    "    current_num +=1 # ---> long form  current_num  = current_num +1 ===> you are incrementing the value by 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "starting \n",
+    "list \n",
+    "tuple\n",
+    "dictionaries\n",
+    "\n",
+    "accpeting the user input\n",
+    "if conditions\n",
+    "for looping\n",
+    "while loop\n",
+    "\n",
+    "built os the availble right away to use()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Introduction to  Python functions()\n",
+    "# code reusability -->\n",
+    "\n",
+    "write once -- read many time --\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def greet_user():\n",
+    "    \"\"\"hello to python training\"\"\" # called as doc string ==> commenting a inside a funtion\n",
+    "    print('Hello')\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "greet_user() # function call"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# passing information to a function"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def greet_user(username):\n",
+    "    \"\"\"Display simple meessage\"\"\" # called as doc string ==> commenting a inside a funtion\n",
+    "    print('Hello, welcome back to user :', greet_user(username.title()))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "RecursionError",
+     "evalue": "maximum recursion depth exceeded while calling a Python object",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mRecursionError\u001b[0m                            Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-41-9fa363c831a5>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mgreet_user\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Ashok\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;32m<ipython-input-40-45164d23ccc9>\u001b[0m in \u001b[0;36mgreet_user\u001b[0;34m(username)\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mgreet_user\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0musername\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m     \u001b[0;34m\"\"\"Display simple meessage\"\"\"\u001b[0m \u001b[0;31m# called as doc string ==> commenting a inside a funtion\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Hello, welcome back to user :'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgreet_user\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0musername\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtitle\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "... last 1 frames repeated, from the frame below ...\n",
+      "\u001b[0;32m<ipython-input-40-45164d23ccc9>\u001b[0m in \u001b[0;36mgreet_user\u001b[0;34m(username)\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mgreet_user\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0musername\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m     \u001b[0;34m\"\"\"Display simple meessage\"\"\"\u001b[0m \u001b[0;31m# called as doc string ==> commenting a inside a funtion\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Hello, welcome back to user :'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgreet_user\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0musername\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtitle\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mRecursionError\u001b[0m: maximum recursion depth exceeded while calling a Python object"
+     ]
+    }
+   ],
+   "source": [
+    "greet_user(\"Ashok\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def requiredArg (str,num):\n",
+    "     \"\"\"Display simple meessage\"\"\"\n",
+    "  \n",
+    "\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
