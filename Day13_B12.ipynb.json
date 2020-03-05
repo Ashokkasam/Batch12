@@ -1,0 +1,415 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Continuation in function:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "default arguments"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def describe_pet(animal_type, pet_name):\n",
+    "    \"\"\"Display information about the pet\"\"\"\n",
+    "    printf(f\"I have {animal_type}\")#\\n\n",
+    "    print(f\"my {animal_type}'s name is {pet_name}\") # fun defining has been done!"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-1-0474e309e9f0>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-1-0474e309e9f0>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    describe_pet('rex'): # petname , has mentioned!!\u001b[0m\n\u001b[0m                                                    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "describe_pet('rex'): # petname , has mentioned!!"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def describe_pet(animal_type,pet_name):\n",
+    "    \"\"\"Display information about the pet\"\"\"\n",
+    "    print(f\"I have a {animal_type}\")#\\n\n",
+    "    print(f\"my {animal_type}'s name is {pet_name}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-3-41b1ea42b760>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-3-41b1ea42b760>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    describe_pet('rex'):\u001b[0m\n\u001b[0m                        ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "describe_pet('rex'):"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# default args need to be kept at the last while defining the function.\n",
+    "def describe_pet(pet_name, animal_type ='dog'):\n",
+    "    \"\"\"Display information about the pet\"\"\"\n",
+    "    print(f\"I have a {animal_type}\")#\\n\n",
+    "    print(f\"my {animal_type}'s name is {pet_name}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I have a dog\n",
+      "my dog's name is rex\n"
+     ]
+    }
+   ],
+   "source": [
+    "describe_pet('rex')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I have a rabbit\n",
+      "my rabbit's name is squ\n"
+     ]
+    }
+   ],
+   "source": [
+    " describe_pet('squ', 'rabbit')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# return values "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_formatted_name(first_name, last_name):\n",
+    "    \"\"\"Returns full name neatly formatted\"\"\"\n",
+    "    full_name = f\"{first_name} {last_name}\"\n",
+    "    return full_name.title()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Ashok Kasam'"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "get_formatted_name('ashok','kasam') # args"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'ashok' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-9-4541f4131b37>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mget_formatted_name\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mashok\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mkasam\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;31m# args\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m: name 'ashok' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "get_formatted_name(ashok,kasam) # args"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Introduction to python classes:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class ---> Class is nothing but a blue print of set of intructions to be followed and worked up on.\n",
+    "methods--> a fun written inside a class is called as method.\n",
+    "attributes/periods ---> a varible written inside a class is called an attribute\n",
+    "object/Instance --> Instation of an object --> to get access to the methods inside a calss. These are utilised"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Question : \n",
+    "    \n",
+    "create  a class Name\n",
+    "1.it need to accept the name of the user as an argument\n",
+    "2.display the name\n",
+    "3.greeting the user\n",
+    "\n",
+    "rules inside a class :\n",
+    "    \n",
+    "methods  --> assign it to self.\n",
+    "\n",
+    "self --> nothing but temp placeholder for an obj\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Name:\n",
+    "    \"\"\"Declaring the functionality\"\"\"\n",
+    "    def createname(self,user):\n",
+    "        self.user=user\n",
+    "        \n",
+    "    def display(self):\n",
+    "        return self.user\n",
+    "    \n",
+    "    def greeting(self):\n",
+    "        print(f\"Hello, Welcome back Jira engineer team {self.user}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# oops obj oriented programming ! "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#creation of an obj\n",
+    "abc = Name()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "abc.createname('ashok')  # self.user = user ==> abc.user = Ashok"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'ashok'"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "abc.display()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello, Welcome back Jira engineer team ashok\n"
+     ]
+    }
+   ],
+   "source": [
+    "abc.greeting()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cobj = Name()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Name:\n",
+    "    \"\"\"Declaring the functionality\"\"\"\n",
+    "    def createname(self,user, age):\n",
+    "        self.user=user\n",
+    "        self.user=age\n",
+    "        \n",
+    "    def display(self):\n",
+    "        return self.user\n",
+    "        return self.age\n",
+    "\n",
+    "    \n",
+    "    def greeting(self):\n",
+    "        print(f\"Hello, Welcome back Jira engineer team {self.user}, {self.age}\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#creation of an obj\n",
+    "abcd = Name()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "abcd.createname('ashok', '10') "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'10'"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "abcd.display()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
